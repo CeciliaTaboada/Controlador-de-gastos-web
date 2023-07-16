@@ -1,0 +1,123 @@
+
+@mixin boxes($background-color){
+    border-radius: 10px;
+    border: none;
+    background-color: $background-color;
+}
+
+@mixin displays($display){
+    display: $display;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    width: 30%;
+}
+
+@mixin buttons($color){
+    cursor: pointer;
+    font-size:large;
+    color: $color;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family:'Courier New', Courier, monospace ;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header { 
+    height: 5em;
+    background-color:#dee2ff;
+    
+    h1 {
+        text-align: center;
+        
+    }
+}
+
+main {
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.minicontainer {
+    @include boxes(#efd3d7);
+    @include displays(flex);
+
+        h2 {
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        button {
+            @include boxes(#cbc0d3);
+            @include buttons(white);
+            width: 40%;
+            height: 30%;
+            margin-top: auto;
+            margin-bottom: 10%;
+    }
+}
+button:hover {
+    transform: scale(1.2);
+}
+
+#signup-form  {
+    @include boxes(#efd3d7);
+    @include displays(none);
+    button{
+        @include buttons(white);
+        @include boxes(#cbc0d3)
+    }
+}
+
+#login-form {
+    @include boxes(#efd3d7);
+    @include displays(none);
+    button{
+        @include buttons(white);
+        @include boxes(#cbc0d3)}
+}
+
+input {
+    width:90%;
+    height: 2em;
+    margin-left: 1em;
+}
+
+label {
+    margin-left: 1em;
+}
+
+#close {
+    align-self: flex-end;
+}
+
+#submit {
+    margin-top: 3%;
+    margin-left: 2em;
+    width: 4em;
+    height: 3em;
+    justify-self: center;
+}
+
+footer {
+    @include displays(flex);
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 5em;
+    background-color: #8e9aaf;
+    font-style: italic;
+    font-weight: bold;
+}
