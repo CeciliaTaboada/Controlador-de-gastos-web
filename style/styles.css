@@ -12,10 +12,10 @@ body {
 
 header {
   height: 5em;
-  background-color: #dee2ff;
 }
-header h1 {
+header h2 {
   text-align: center;
+  font-style: italic;
 }
 
 main {
@@ -32,21 +32,23 @@ main {
 .minicontainer {
   border-radius: 10px;
   border: none;
-  background-color: #efd3d7;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 60%;
   width: 30%;
+  box-shadow: 5px 5px 5px 5px grey;
 }
 .minicontainer h2 {
   text-align: center;
   padding-top: 10%;
+  color: #006d77;
 }
 .minicontainer button {
   border-radius: 10px;
   border: none;
-  background-color: #cbc0d3;
+  background-color: #a4c3b2;
   cursor: pointer;
   font-size: large;
   color: white;
@@ -63,12 +65,13 @@ button:hover {
 #signup-form {
   border-radius: 10px;
   border: none;
-  background-color: #efd3d7;
+  background-color: #6b9080;
   display: none;
   flex-direction: column;
   align-items: center;
   height: 60%;
   width: 30%;
+  box-shadow: 5px 5px 5px 5px grey;
 }
 #signup-form button {
   cursor: pointer;
@@ -76,18 +79,19 @@ button:hover {
   color: white;
   border-radius: 10px;
   border: none;
-  background-color: #cbc0d3;
+  background-color: #a4c3b2;
 }
 
 #login-form {
   border-radius: 10px;
   border: none;
-  background-color: #efd3d7;
+  background-color: #6b9080;
   display: none;
   flex-direction: column;
   align-items: center;
   height: 60%;
   width: 30%;
+  box-shadow: 5px 5px 5px 5px grey;
 }
 #login-form button {
   cursor: pointer;
@@ -95,7 +99,7 @@ button:hover {
   color: white;
   border-radius: 10px;
   border: none;
-  background-color: #cbc0d3;
+  background-color: #a4c3b2;
 }
 
 input {
@@ -130,7 +134,7 @@ footer {
   justify-content: space-evenly;
   width: 100%;
   height: 5em;
-  background-color: #8e9aaf;
+  background-color: #415a77;
   font-style: italic;
   font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

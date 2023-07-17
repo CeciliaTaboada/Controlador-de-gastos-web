@@ -31,11 +31,9 @@ body {
 
 header { 
     height: 5em;
-    background-color:#dee2ff;
-    
-    h1 {
+    h2 {
         text-align: center;
-        
+        font-style: italic;
     }
 }
 
@@ -51,16 +49,18 @@ main {
 }
 
 .minicontainer {
-    @include boxes(#efd3d7);
+    @include boxes(white);
     @include displays(flex);
+    box-shadow: 5px 5px 5px 5px grey;
 
         h2 {
             text-align: center;
             padding-top: 10%;
+            color: #006d77;
         }
 
         button {
-            @include boxes(#cbc0d3);
+            @include boxes(#a4c3b2);
             @include buttons(white);
             width: 40%;
             height: 30%;
@@ -73,20 +73,22 @@ button:hover {
 }
 
 #signup-form  {
-    @include boxes(#efd3d7);
+    @include boxes(#6b9080);
     @include displays(none);
+    box-shadow: 5px 5px 5px 5px grey;
     button{
         @include buttons(white);
-        @include boxes(#cbc0d3)
+        @include boxes(#a4c3b2)
     }
 }
 
 #login-form {
-    @include boxes(#efd3d7);
+    @include boxes(#6b9080);
     @include displays(none);
+    box-shadow: 5px 5px 5px 5px grey;
     button{
         @include buttons(white);
-        @include boxes(#cbc0d3)}
+        @include boxes(#a4c3b2)}
 }
 
 input {
@@ -117,7 +119,7 @@ footer {
     justify-content:space-evenly;
     width: 100%;
     height: 5em;
-    background-color: #8e9aaf;
+    background-color: #415a77;
     font-style: italic;
     font-weight: bold;
 }
