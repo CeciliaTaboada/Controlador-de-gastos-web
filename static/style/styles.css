@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  height: 5em;
+}
+header h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+main {
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.minicontainer {
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+.minicontainer h2 {
+  text-align: center;
+  padding-top: 10%;
+  color: #006d77;
+}
+.minicontainer button {
+  border-radius: 10px;
+  border: none;
+  background-color: #a4c3b2;
+  cursor: pointer;
+  font-size: large;
+  color: white;
+  width: 40%;
+  height: 30%;
+  margin-top: auto;
+  margin-bottom: 10%;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#signup-form {
+  border-radius: 10px;
+  border: none;
+  background-color: #6b9080;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+#signup-form button {
+  cursor: pointer;
+  font-size: large;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #a4c3b2;
+}
+
+#login-form {
+  border-radius: 10px;
+  border: none;
+  background-color: #6b9080;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+#login-form button {
+  cursor: pointer;
+  font-size: large;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #a4c3b2;
+}
+
+input {
+  width: 90%;
+  height: 2em;
+  margin-left: 1em;
+}
+
+label {
+  margin-left: 1em;
+}
+
+#close {
+  align-self: flex-end;
+}
+
+#submit {
+  margin-top: 3%;
+  margin-left: 2em;
+  width: 4em;
+  height: 3em;
+  justify-self: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 30%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 5em;
+  background-color: #415a77;
+  font-style: italic;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */
