@@ -22,19 +22,19 @@
             <form id="signupform" action="submit">
                 <div>
                     <label for="email">Enter your email</label>
-                    <input type="email" placeholder="You can use a fake email">
+                    <input type="email" name="email" required placeholder="You can use a fake email">
                 </div>
                 <div>
                     <label for="password">Enter your password</label>
-                    <input type="password" placeholder="Enter a password">
+                    <input type="password" name="password" required placeholder="Enter a password">
                 </div>
                 <div>
                     <label for="password1">Validate the password</label>
-                    <input type="password" placeholder="Enter the same password">
+                    <input type="password" name="password1" required placeholder="Enter the same password">
                 </div>
                 <div>
                     <label for="name">Enter your name</label>
-                    <input type="text" placeholder="Enter your name or nickname">
+                    <input type="text" name="name" required placeholder="Enter your name or nickname">
                 </div>
                 <button id="submit">Create</button>
             </form>
@@ -48,11 +48,11 @@
             <form id="loginform" action="submit">
                 <div>
                     <label for="email">Enter your email</label>
-                    <input type="email" placeholder="Enter your email or fake email">
+                    <input type="email" name="email" required placeholder="Enter your email or fake email">
                 </div>
                 <div>
                     <label for="password">Enter your password</label>
-                    <input type="password" placeholder="Enter your password">
+                    <input type="password" name="password" required placeholder="Enter your password">
                 </div>
                 <button id="submit">Log in</button>
             </form>
