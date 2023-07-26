@@ -112,11 +112,11 @@ label {
   margin-left: 1em;
 }
 
-#close {
+.close {
   align-self: flex-end;
 }
 
-#userbutton {
+.userbutton {
   margin-top: 3%;
   margin-left: 2em;
   width: 4em;
