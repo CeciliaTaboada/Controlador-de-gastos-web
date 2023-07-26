@@ -18,7 +18,7 @@
             <button class="signup" id="signup" onclick="hideShow('signup-form', 'minicont-sign');">Sign Up</button>
         </div>
         <div class="form-container" id="signup-form">
-            <button id="close" onclick="hideShow('minicont-sign','signup-form')">&times;</button>
+            <button class="close" onclick="hideShow('minicont-sign','signup-form')">&times;</button>
             <form id="signupform" type="submit" method="POST">
                 <div>
                     <label for="email">Enter your email</label>
@@ -36,7 +36,7 @@
                     <label for="name">Enter your name</label>
                     <input type="text" name="name" required placeholder="Enter your name or nickname">
                 </div>
-                <button id="userbutton" type="submit">Create</button>
+                <button class="userbutton" type="submit">Create</button>
             </form>
         </div>
         <div class="minicontainer" id="minicont-log">
@@ -44,7 +44,7 @@
             <button class="login" id="login" onclick="hideShow('login-form', 'minicont-log')">Login</button>
         </div>
         <div  class="form-container" id="login-form">
-            <button id="close" onclick="hideShow('minicont-log','login-form')">&times;</button>
+            <button class="close" onclick="hideShow('minicont-log','login-form')">&times;</button>
             <form id="loginform" type="submit" method="POST">
                 <div>
                     <label for="email">Enter your email</label>
@@ -54,7 +54,7 @@
                     <label for="password">Enter your password</label>
                     <input type="password" name="password-login" required placeholder="Enter your password">
                 </div>
-                <button id="userbutton" type="submit">Log in</button>
+                <button class="userbutton" type="submit">Log in</button>
             </form>
         </div>
     </div>
