@@ -1,0 +1,30 @@
+@import "variables";
+
+* {box-sizing: border-box;}
+
+body {
+    @extend %body;
+}
+
+header {
+    background-color: brown;
+    height: 3em;
+    
+    section {
+        cursor: pointer;
+
+        div {
+            @include displays(none);
+            align-items:flex-start;
+            
+            li {
+                cursor: pointer;
+                list-style: none;
+            }
+        }
+    }
+}
+
+footer {
+    @extend %footer;
+}
