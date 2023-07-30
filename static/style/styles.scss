@@ -1,17 +1,5 @@
 @import "variables";
 
-@mixin boxes($background-color){
-    border-radius: 10px;
-    border: none;
-    background-color: $background-color;
-}
-
-@mixin buttons($color){
-    cursor: pointer;
-    font-size:large;
-    color: $color;
-}
-
 * {box-sizing: border-box;}
 
 body {
