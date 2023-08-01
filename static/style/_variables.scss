@@ -9,7 +9,7 @@
 @mixin boxes($background-color){
     border-radius: 10px;
     border: none;
-    background-color: $background-color;
+    background: $background-color;
 }
 
 @mixin buttons($color){
