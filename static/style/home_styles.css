@@ -25,30 +25,31 @@ footer {
   box-sizing: border-box;
 }
 
-header {
-  background-color: #019b98;
-  height: 3em;
-}
-header section {
-  cursor: pointer;
-}
-header section div {
-  display: none;
+#user-options {
+  display: flex;
   flex-direction: column;
   align-items: center;
   height: 60%;
   width: 30%;
-  align-items: flex-start;
+  background-color: #019b98;
+  height: 100vh;
+  width: 10em;
 }
-header section div li {
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  padding-left: 0;
+}
+ul li {
+  margin-top: 2.5em;
   cursor: pointer;
-  list-style: none;
 }
 
 #date {
   border-radius: 10px;
   border: none;
-  background: #014e60;
+  background: linear-gradient(to right, #014e60, #56aec2);
   visibility: hidden;
   position: fixed;
   left: 40%;
@@ -75,8 +76,13 @@ header section div li {
   align-self: flex-end;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
 main section {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -88,7 +94,7 @@ main section div {
   width: 30%;
   border-radius: 10px;
   border: none;
-  background: #019b98;
+  background: linear-gradient(to right, #019b98, #4fccca);
   margin-top: 1em;
   padding: 2em;
   height: 100%;
@@ -98,6 +104,23 @@ main section div p {
   color: #c1ffff;
 }
 
+#next-and-last {
+  background-color: #019b98;
+  height: 100vh;
+  width: 10em;
+}
+
+#totals-and-predictions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#totals-and-predictions div {
+  width: 40%;
+  height: 40%;
+}
+
 #date.active {
   visibility: visible;
   transform: translate(0, 20%);
@@ -105,7 +128,7 @@ main section div p {
   opacity: 1;
 }
 
-#header.active {
+#user-options.active {
   filter: blur(2px);
   pointer-events: none;
   -webkit-user-select: none;

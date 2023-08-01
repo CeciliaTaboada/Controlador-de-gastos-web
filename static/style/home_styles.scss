@@ -6,27 +6,27 @@ body {
     @extend %body;
 }
 
-header {
+#user-options {
+    @include displays(flex);
     background-color: #019b98;
-    height: 3em;
-    
-    section {
-        cursor: pointer;
+    height: 100vh;
+    width: 10em;
+}
 
-        div {
-            @include displays(none);
-            align-items:flex-start;
-            
-            li {
-                cursor: pointer;
-                list-style: none;
-            }
-        }
+ul {
+    height: 100%;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+        margin-top: 2.5em;
+        cursor: pointer;
     }
 }
 
+
 #date {
-    @include boxes(#014e60);
+    @include boxes(linear-gradient(to right,#014e60, #56aec2));
     visibility: hidden;
     position: fixed;
     left: 40%;
@@ -49,17 +49,18 @@ header {
 }
 
 
-
-
 main {
+    display: flex;
+    justify-content:center;
     section {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         
         div {
             @include displays(flex);
-            @include boxes(#019b98);
+            @include boxes(linear-gradient(to right, #019b98, #4fccca));
             margin-top: 1em;
             padding: 2em;
             height: 100%;
@@ -72,6 +73,23 @@ main {
     }
 }
 
+#next-and-last {
+    background-color: #019b98;
+    height: 100vh;
+    width: 10em;
+}
+
+#totals-and-predictions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div {
+        width: 40%;
+        height: 40%;
+    }
+}
+
 #date.active {
     visibility: visible;
     transform: translate(0, 20%);
@@ -79,7 +97,7 @@ main {
     opacity: 1;
 }
 
-#header.active{
+#user-options.active{
     filter: blur(2px);
     pointer-events: none;
     user-select: none;
