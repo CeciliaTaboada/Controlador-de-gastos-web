@@ -26,7 +26,7 @@ footer {
 }
 
 header {
-  background-color: brown;
+  background-color: #019b98;
   height: 3em;
 }
 header section {
@@ -48,7 +48,7 @@ header section div li {
 #date {
   border-radius: 10px;
   border: none;
-  background-color: #415a77;
+  background: #014e60;
   visibility: hidden;
   position: fixed;
   left: 40%;
@@ -71,7 +71,7 @@ header section div li {
   color: black;
   border-radius: 10px;
   border: none;
-  background-color: none;
+  background: none;
   align-self: flex-end;
 }
 
@@ -88,11 +88,14 @@ main section div {
   width: 30%;
   border-radius: 10px;
   border: none;
-  background-color: #a4c3b2;
+  background: #019b98;
   margin-top: 1em;
   padding: 2em;
   height: 100%;
   cursor: pointer;
+}
+main section div p {
+  color: #c1ffff;
 }
 
 #date.active {

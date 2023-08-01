@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: brown;
+    background-color: #019b98;
     height: 3em;
     
     section {
@@ -26,7 +26,7 @@ header {
 }
 
 #date {
-    @include boxes(#415a77);
+    @include boxes(#014e60);
     visibility: hidden;
     position: fixed;
     left: 40%;
@@ -59,11 +59,15 @@ main {
         
         div {
             @include displays(flex);
-            @include boxes(#a4c3b2);
+            @include boxes(#019b98);
             margin-top: 1em;
             padding: 2em;
             height: 100%;
             cursor: pointer;
+
+            p {
+                color: #c1ffff;
+            }
         }
     }
 }
