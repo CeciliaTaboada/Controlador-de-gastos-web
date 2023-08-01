@@ -8,66 +8,61 @@
     <title>Investment controler - Home</title>
 </head>
 <body>
-    <header id="header">
-        <section id="user-options" onclick="showmenu('menu')"> Menu <-
-            <div id="menu">
+    <main id="main">
+    <section id="user-options" onclick="showmenu('menu')">
+        <ul>
+            <li onclick="addName('reminder-div')" id="reminder-div">
+                <p>Insert the reminder</p>
+            </li>
+            <li onclick="addName('bills-div')" id="bills-div">
+                <p>Insert new bill payment</p>
+            </li>
+            <li onclick="addName('market-div')" id="market-div">
+                <p>Insert new market shop</p>
+            </li>
             <li id="bills">All bills</li>
             <li id="market">All Market</li>
-            <li id="reminder">All Reminder</li>
+            <li id="reminder">All Reminders</li>
             <li>Calculate</li>
             <li id="metrics">Metrics</li>
             <li id="logout">logout</li>
-            </div>
-        </section>
-    </header>
-    <main id="main">
-    <section id="payment-divs">
-        <div onclick="addName('reminder-div')" id="reminder-div">
-            <p>Insert the reminder</p>
-        </div>
-        <div onclick="addName('bills-div')" id="bills-div">
-            <p>Insert new bill payment</p>
-        </div>
-        <div onclick="addName('market-div')" id="market-div">
-            <p>Insert new market shop</p>
-        </div>
+        </ul>
     </section>
-        
-    <section>
-        <div>
-            <p>Next reminder</p>
-        </div>
-        <div>
-            <p>Next bill to pay</p>
-        </div>
-        <div>
-            <p>Latest market shop</p>
-        </div>
-
-    </section>
-
-    <section>
+    
+    <section id="totals-and-predictions">
         <div>
             <p>Total of the month</p>
         </div>
         <div>
-            <p>Prediction for next month according to inflation</p>
-        </div>
-        <div>
             <p>Inflation of this month</p>
         </div>
-    </section>
-        
-    </main>
-    <div id="date">
         <div>
-            <button class="close" onclick="toggle()">
+            <p>Prediction for next month according to inflation</p>
+        </div>
+    </section>
+    
+    <section id="next-and-last">
+        <ul>
+            <p>Next reminder</p>
+        </ul>
+        <ul>
+            <p>Latest bill payed</p>
+        </ul>
+        <ul>
+            <p>Latest market shop</p>
+        </ul>
+    
+    </section>
+</main>
+<div id="date">
+    <div>
+        <button class="close" onclick="toggle()">
                 <span>&times;</span>
             </button>
             <form method="post">
                 <label for="date">Add the date:</label>
-                <input type="date" id="date-input" >
-                <p id="input-p"></p>
+                <input type="date" name="date" id="date-input" >
+                <label id="input-p"></label>
                 <input type="text" id="data-input">
                 <button type="submit">Submit</button>
             </form>
