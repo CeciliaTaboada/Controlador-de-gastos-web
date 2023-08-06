@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="..\static\javascript\home.js"></script>
+    <script src="..\static\javascript\reminders.js"></script>
+    <script src="..\static\javascript\bills.js"></script>
+    <script src="..\static\javascript\shops.js"></script>
     <link rel="stylesheet" href="..\static\style\home_styles.css">
     <title>Investment controler - Home</title>
 </head>
 <body>
     <main id="main">
-    <section id="user-options" onclick="showmenu('menu')">
+    <section id="user-options">
         <ul>
             <li onclick="addName('reminder-div')" id="reminder-div">
                 <p>Insert the reminder</p>
@@ -25,7 +28,7 @@
             <li id="reminder">All Reminders</li>
             <li>Calculate</li>
             <li id="metrics">Metrics</li>
-            <li id="logout">logout</li>
+            <li><a href="/logout">Logout</a></li>
         </ul>
     </section>
     
