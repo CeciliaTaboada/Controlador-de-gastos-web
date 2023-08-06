@@ -1,17 +1,8 @@
 
-function showmenu(show){
-    let element = document.getElementById(show);
-    if (element.style.display == "none"){
-        element.style.display = "flex"
-    } else{
-        element.style.display = "none"
-    };
-};
-
 function toggle(){
     document.getElementById("date").classList.toggle("active");
     document.getElementById("main").classList.toggle("active");
-    document.getElementById("header").classList.toggle("active");
+    document.getElementById("user-options").classList.toggle("active");
     document.getElementById("footer").classList.toggle("active");
 };
 
